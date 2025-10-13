@@ -73,7 +73,7 @@ export default function Hero() {
               />
               <div className="absolute inset-0 grid place-items-center">
                 <div className="text-center">
-                  <div className="text-sm font-mono text-muted-foreground">Signature</div>
+                  <div className="text-sm font-mono text-muted-foreground">Backend</div>
                   <div className="text-5xl font-semibold tracking-tight">Developer</div>
                 </div>
               </div>
