@@ -3,6 +3,12 @@
 import Section from "@/components/section"
 import { Button } from "@/components/ui/button"
 import * as React from "react"
+import { ShimmerButton } from "@/components/ui/shimmer-button"
+import { SiNextdotjs } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
+
 
 export default function Hero() {
   const [tilt, setTilt] = React.useState({ x: 0, y: 0 })
@@ -19,8 +25,11 @@ export default function Hero() {
     <Section className="pt-12 md:pt-16">
       <div className="grid md:grid-cols-2 items-center gap-10">
         <div className="space-y-6">
-          <span className="inline-flex items-center text-xs font-mono px-2 py-1 rounded-md bg-secondary text-secondary-foreground border border-border/60">
-            Available for select projects
+          <span>
+            <ShimmerButton
+              className="inline-flex items-center text-xs font-mono px-2 py-1 rounded-md bg-secondary text-secondary-foreground border border-border/60">
+              Avaliable for freelance projects
+            </ShimmerButton>
           </span>
           <h1 className="text-pretty text-4xl md:text-5xl font-semibold leading-tight">
             I craft high-performance, delightful developer experiences.
@@ -42,10 +51,10 @@ export default function Hero() {
             </Button>
           </div>
           <ul className="flex flex-wrap gap-3 text-xs text-muted-foreground">
-            <li className="px-2 py-1 rounded-md bg-muted">Next.js</li>
-            <li className="px-2 py-1 rounded-md bg-muted">TypeScript</li>
-            <li className="px-2 py-1 rounded-md bg-muted">Tailwind CSS</li>
-            <li className="px-2 py-1 rounded-md bg-muted">Edge / Serverless</li>
+            <SiNextdotjs className="size-7" />
+            <BiLogoTypescript className="size-7" />
+            <RiTailwindCssFill className="size-7" />
+            <FaNodeJs className="size-7" />
           </ul>
         </div>
 
