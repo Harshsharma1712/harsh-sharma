@@ -1,20 +1,30 @@
-"use client"
-
-import type * as React from "react"
+import { cn } from "@/lib/utils"
+import type { IconType } from "react-icons"
+import type { ForwardRefExoticComponent, RefAttributes } from "react"
+import type { LucideProps } from "lucide-react"
 
 type IconBadgeProps = {
-  icon: React.ElementType
+  icon:
+    | IconType
+    | ForwardRefExoticComponent<
+        Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
+      >
   label: string
+  className?: string
 }
 
-export default function IconBadge({ icon: Icon, label }: IconBadgeProps) {
+export default function IconBadge({ icon: Icon, label, className }: IconBadgeProps) {
   return (
-    <span
-      className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-muted text-muted-foreground border border-border/60 text-sm hover:text-foreground transition-colors"
-      aria-label={label}
+    <div
+      className={cn(
+        "flex items-center gap-3 px-4 py-3 rounded-xl border border-border/50 bg-muted/40",
+        "text-base font-medium hover:bg-muted/60 transition-colors duration-200",
+        "shadow-sm hover:shadow-md",
+        className
+      )}
     >
-      <Icon size={16} className="shrink-0" aria-hidden="true" />
-      <span>{label}</span>
-    </span>
+      <Icon className="text-xl md:text-2xl opacity-90" />
+      <span className="text-sm md:text-base">{label}</span>
+    </div>
   )
 }

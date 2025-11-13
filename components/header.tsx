@@ -23,6 +23,9 @@ export default function Header() {
           <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             Contact
           </a>
+          <a href="#skills" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            skills
+          </a>
         </nav>
         <div className="flex items-center gap-3">
           <SocialLinks className="hidden md:flex" />

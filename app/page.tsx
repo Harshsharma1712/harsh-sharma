@@ -6,6 +6,8 @@ import Experience from "@/sections/experience"
 import Contact from "@/sections/contact"
 import Footer from "@/components/footer"
 import AnimatedGrid from "@/components/animated-grid"
+import SkillsGrid from "@/sections/skill-grid"
+
 
 export default function HomePage() {
   return (
@@ -15,8 +17,8 @@ export default function HomePage() {
 
       <Header />
       <Hero />
-      <Skills />
       <Projects />
+      <SkillsGrid />
       {/* <Experience /> */}
       <Contact />
       <Footer />
