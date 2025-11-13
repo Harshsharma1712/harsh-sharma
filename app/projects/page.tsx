@@ -2,7 +2,6 @@ import Section from "@/components/section"
 import TiltCard from "@/components/tilt-card"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
@@ -13,11 +12,11 @@ const projects = [
     link: "https://github.com/Harshsharma1712/express-pro-structure#readme",
   },
   {
-    title: "Cloud Share",
-    desc: "A lightweight and secure file-sharing backend built with Express.js, Drizzle ORM, and Neon PostgreSQL.",
-    skills: ["Express.js", "JWT", "Postgresql", "Drizzle ORM", "ImageKit", "DaisyUI"],
-    img: "/cloud-share.png",
-    link: "https://github.com/Harshsharma1712/file-upload-server#readme",
+    title: "Reels Application",
+    desc: "A short video streaming application built for managing video data in database.",
+    skills: ["Next.js", "MongoDB", "ImageKit", "next-auth"],
+    img: "/reels-app.png",
+    link: "https://reels-app-rouge.vercel.app/",
   },
   {
     title: "Task Manager",
@@ -32,12 +31,7 @@ export default function Projects() {
   return (
     <Section id="projects">
       <div className="flex items-end justify-between mb-6">
-        <h2 className="text-2xl md:text-3xl font-semibold">Selected Projects</h2>
-        <Button variant="secondary" size="sm" asChild>
-          <a href="/projects" aria-label="View all projects">
-            View all
-          </a>
-        </Button>
+        <h2 className="text-2xl md:text-3xl font-semibold">All Projects</h2>
       </div>
 
       <div className="grid md:grid-cols-3 gap-6">
@@ -68,9 +62,8 @@ export default function Projects() {
             <div className="mt-4">
               <Button asChild size="sm">
                 <a href={p.link} aria-label={`Open ${p.title}`}>
-                  Open <FaGithub />
+                  Open
                 </a>
-                
               </Button>
             </div>
           </TiltCard>

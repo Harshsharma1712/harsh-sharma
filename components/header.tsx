@@ -17,9 +17,9 @@ export default function Header() {
           <a href="#projects" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             Projects
           </a>
-          <a href="#experience" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          {/* <a href="#experience" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             Experience
-          </a>
+          </a> */}
           <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             Contact
           </a>

@@ -17,7 +17,7 @@ export default function HomePage() {
       <Hero />
       <Skills />
       <Projects />
-      <Experience />
+      {/* <Experience /> */}
       <Contact />
       <Footer />
     </main>

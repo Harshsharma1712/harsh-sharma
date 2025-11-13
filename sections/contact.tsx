@@ -1,5 +1,8 @@
 import Section from "@/components/section"
 import { Button } from "@/components/ui/button"
+import { MdOutlineMail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 export default function Contact() {
   return (
@@ -12,18 +15,22 @@ export default function Contact() {
         </p>
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
           <Button asChild>
-            <a href="mailto:you@example.com" aria-label="Email me">
+            <a href="mailto:harshsharma17122005@gmail.com" aria-label="Email me">
               Email me
+              <MdOutlineMail />
             </a>
           </Button>
           <Button asChild variant="secondary">
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="Open LinkedIn">
+            <a href="https://www.linkedin.com/in/harshsharma0017/" target="_blank" rel="noreferrer" aria-label="Open LinkedIn">
               LinkedIn
+              <FaLinkedin />
             </a>
           </Button>
+          
           <Button asChild variant="secondary">
-            <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="Open GitHub">
-              GitHub
+            <a href="https://x.com/teche_harsh" target="_blank" rel="noreferrer" aria-label="Open GitHub">
+              Twitter (X)
+              <FaSquareXTwitter />
             </a>
           </Button>
         </div>

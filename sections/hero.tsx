@@ -8,6 +8,7 @@ import { SiNextdotjs } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
 
 
 export default function Hero() {
@@ -28,7 +29,7 @@ export default function Hero() {
           <span>
             <ShimmerButton
               className="inline-flex items-center text-xs font-mono px-2 py-1 rounded-md bg-secondary text-secondary-foreground border border-border/60">
-              Avaliable for freelance projects
+              Open to new opportunities 
             </ShimmerButton>
           </span>
           <h1 className="text-pretty text-4xl md:text-5xl font-semibold leading-tight">
@@ -55,6 +56,7 @@ export default function Hero() {
             <BiLogoTypescript className="size-7" />
             <RiTailwindCssFill className="size-7" />
             <FaNodeJs className="size-7" />
+            <SiExpress className="size-7" />
           </ul>
         </div>
 
