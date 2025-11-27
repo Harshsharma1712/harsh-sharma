@@ -20,11 +20,11 @@ const projects = [
     link: "https://github.com/Harshsharma1712/file-upload-server#readme",
   },
   {
-    title: "Task Manager",
-    desc: "A ToDo Application built to manage todos.",
-    skills: ["Next.js", "Clerk", "Neon Postgres", "Drizzle ORM"],
-    img: "/task-manager.png",
-    link: "https://github.com/Harshsharma1712/task-manager#readme",
+    title: "Log Analyzer",
+    desc: "A powerful log-analysis application that processes .txt log files visualizes key performance metrics, and generates an AI-powered report.",
+    skills: ["FastAPI", "Streamlit", "Google Gemini", "Pandas", "Plotly"],
+    img: "/log-analyzer.png",
+    link: "https://github.com/Harshsharma1712/log-analyzer#readme",
   },
 ]
 
@@ -70,7 +70,7 @@ export default function Projects() {
                 <a href={p.link} aria-label={`Open ${p.title}`}>
                   Open <FaGithub />
                 </a>
-                
+
               </Button>
             </div>
           </TiltCard>

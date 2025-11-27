@@ -11,7 +11,7 @@ export default function Header() {
           href="/"
           className="font-mono text-sm tracking-tight text-muted-foreground hover:text-foreground transition-colors"
         >
-          {"<dev/>"} portfolio
+          {"<dev/>"} Harsh.exe
         </Link>
         <nav className="hidden md:flex items-center gap-3">
           <a href="#projects" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

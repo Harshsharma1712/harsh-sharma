@@ -15,19 +15,14 @@ import {
   SiMongodb,
   SiGit,
   SiGithub,
-  SiDocker,
-  SiFigma,
-  SiPrisma,
-  SiSupabase,
   SiExpress,
   SiFastapi,
-  SiPostman 
+  SiPostman,
 } from "react-icons/si"
-import { VscVscode } from "react-icons/vsc";
+import { VscVscode } from "react-icons/vsc"
+import { FaHtml5 } from "react-icons/fa"
+import { SiCss3, SiCplusplus } from "react-icons/si"
 import type { IconType } from "react-icons"
-import { FaHtml5 } from "react-icons/fa";
-import { SiCss3 } from "react-icons/si";
-import { SiCplusplus } from "react-icons/si";
 
 type SkillCategory = {
   title: string
@@ -42,8 +37,8 @@ const skillCategories: SkillCategory[] = [
       { name: "TypeScript", icon: SiTypescript },
       { name: "Python", icon: SiPython },
       { name: "C++", icon: SiCplusplus },
-      {name: "HTML", icon: FaHtml5},
-      {name: "CSS", icon: SiCss3}
+      { name: "HTML", icon: FaHtml5 },
+      { name: "CSS", icon: SiCss3 },
     ],
   },
   {
@@ -51,10 +46,10 @@ const skillCategories: SkillCategory[] = [
     items: [
       { name: "React", icon: SiReact },
       { name: "Next.js", icon: SiNextdotjs },
-      { name: "Express.js", icon: SiExpress  },
+      { name: "Express.js", icon: SiExpress },
       { name: "Node.js", icon: SiNodedotjs },
       { name: "Tailwind CSS", icon: SiTailwindcss },
-      { name: "FastAPI", icon: SiFastapi  },
+      { name: "FastAPI", icon: SiFastapi },
     ],
   },
   {
@@ -69,8 +64,8 @@ const skillCategories: SkillCategory[] = [
     items: [
       { name: "Git", icon: SiGit },
       { name: "GitHub", icon: SiGithub },
-      { name: "VS Code", icon: VscVscode  },
-      { name: "Postman", icon: SiPostman   },
+      { name: "VS Code", icon: VscVscode },
+      { name: "Postman", icon: SiPostman },
     ],
   },
 ]
@@ -80,7 +75,7 @@ export default function SkillsGrid() {
     <Section id="skills">
       <h2 className="text-2xl md:text-3xl font-semibold mb-6">Technical Skills</h2>
 
-      <div className="flex flex-col gap-6 ">
+      <div className="flex flex-col gap-6">
         {skillCategories.map((category) => (
           <Card
             key={category.title}
@@ -89,8 +84,10 @@ export default function SkillsGrid() {
             <CardHeader>
               <CardTitle className="text-lg font-semibold">{category.title}</CardTitle>
             </CardHeader>
+
             <CardContent>
-              <div className="flex flex-col gap-3">
+              {/* Responsive grid for better layout */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 {category.items.map((skill) => (
                   <IconBadge key={skill.name} icon={skill.icon} label={skill.name} />
                 ))}

@@ -2,6 +2,7 @@ import Section from "@/components/section"
 import TiltCard from "@/components/tilt-card"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
@@ -10,6 +11,20 @@ const projects = [
     skills: ["JavaScript", "Node.js", "File management"],
     img: "/express-pro-structure.png",
     link: "https://github.com/Harshsharma1712/express-pro-structure#readme",
+  },
+  {
+    title: "Cloud Share",
+    desc: "A lightweight and secure file-sharing backend built with Express.js, Drizzle ORM, and Neon PostgreSQL.",
+    skills: ["Express.js", "JWT", "Postgresql", "Drizzle ORM", "ImageKit", "DaisyUI"],
+    img: "/cloud-share.png",
+    link: "https://github.com/Harshsharma1712/file-upload-server#readme",
+  },
+  {
+    title: "Log Analyzer",
+    desc: "A powerful log-analysis application that processes .txt log files visualizes key performance metrics, and generates an AI-powered report.",
+    skills: ["FastAPI", "Streamlit", "Google Gemini", "Pandas", "Plotly"],
+    img: "/log-analyzer.png",
+    link: "https://github.com/Harshsharma1712/log-analyzer#readme",
   },
   {
     title: "Reels Application",
@@ -62,7 +77,7 @@ export default function Projects() {
             <div className="mt-4">
               <Button asChild size="sm">
                 <a href={p.link} aria-label={`Open ${p.title}`}>
-                  Open
+                  Open <FaGithub />
                 </a>
               </Button>
             </div>
