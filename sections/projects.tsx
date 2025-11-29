@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Express-pro-structure",
     desc: "Make an npm package for Express.js developer to provide production ready setup and packages.",
-    skills: ["JavaScript", "Node.js", "File management"],
+    skills: ["Node.js", "Inquirer.js", "Chalk", "NPM"],
     img: "/express-pro-structure.png",
     link: "https://github.com/Harshsharma1712/express-pro-structure#readme",
   },

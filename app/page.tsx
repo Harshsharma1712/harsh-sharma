@@ -14,7 +14,6 @@ export default function HomePage() {
     <main className="relative">
       {/* Ambient animated background container */}
       <div className="absolute inset-0 -z-10 w-full h-full overflow-hidden">
-        <AnimatedGrid />
         {/* Particles behind all content */}
         <Particles className="absolute inset-0 w-full h-full" quantity={100} ease={80} /* etc props */ />
       </div>

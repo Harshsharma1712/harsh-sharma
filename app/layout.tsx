@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Suspense } from "react"
 import "./globals.css"
+import { Particles } from "@/components/ui/particles"
 
 export const metadata: Metadata = {
   title: "Harsh Sharma",
