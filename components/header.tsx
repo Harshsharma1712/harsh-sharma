@@ -1,9 +1,16 @@
+"use client"
+
 import Link from "next/link"
 import ThemeToggle from "@/components/theme-toggle"
 import { Button } from "@/components/ui/button"
+import { usePathname } from "next/navigation"
 import SocialLinks from "./social-links"
 
 export default function Header() {
+
+  const pathname = usePathname()
+  const isHome = pathname === "/"
+
   return (
     <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/60">
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
@@ -13,7 +20,10 @@ export default function Header() {
         >
           {"<dev/>"} Harsh.exe
         </Link>
-        <nav className="hidden md:flex items-center gap-3">
+
+        {/* NAVIGATION (only show on homepage) */}
+        {isHome && (
+          <nav className="hidden md:flex items-center gap-3">
           <a href="#projects" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             Projects
           </a>
@@ -27,14 +37,22 @@ export default function Header() {
             skills
           </a>
         </nav>
+        )}
+        
         <div className="flex items-center gap-3">
           <SocialLinks className="hidden md:flex" />
-          <ThemeToggle />
-          <Button asChild size="sm" className="font-mono">
+          <SocialLinks className="flex md:hidden" />
+          {/* <ThemeToggle /> */}
+
+          {/* Hire Me button (only show on homepage) */}
+          {isHome && (
+            <Button asChild size="sm" className="font-mono">
             <a href="#contact" aria-label="Contact me">
               Hire me
             </a>
           </Button>
+          )}
+          
         </div>
       </div>
     </header>

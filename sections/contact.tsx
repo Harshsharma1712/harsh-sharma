@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="rounded-xl border border-border/60 bg-card p-8 md:p-10 text-center">
         <h2 className="text-2xl md:text-3xl font-semibold">Let&apos;s build something exceptional.</h2>
         <p className="mt-2 text-muted-foreground max-w-2xl mx-auto">
-          I partner with teams to craft fast, accessible, and maintainable products.
+          Have an opportunity or idea? I’d love to hear it — Twitter (X) is the quickest way to reach me.
         </p>
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
           <Button asChild>

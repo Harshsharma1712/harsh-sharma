@@ -37,7 +37,7 @@ export default function Hero() {
             I craft high-performance, delightful developer experiences.
           </h1>
           <p className="text-muted-foreground text-balance">
-            Full-stack engineer focused on backend Development and shipping fast, accessible, and reliable web apps. I obsess over DX, performance budgets, and clean architecture.
+            Full-stack developer focused on backend engineering. I enjoy designing efficient backend systems, and exploring new technologies. As a fresher, I’m focused on growing through practical projects, open-source work, and solving engineering challenges.
           </p>
           <div className="flex flex-wrap gap-3">
             <Button asChild>
