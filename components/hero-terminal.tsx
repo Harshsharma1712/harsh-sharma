@@ -6,7 +6,14 @@ import {
 
 export function HeroTerminal() {
     return (
-        <Terminal>
+        <Terminal
+            className="
+            max-w-full
+            overflow-hidden
+            whitespace-pre-wrap
+            break-words
+            px-3
+            ">
             <TypingAnimation>Initializing system... 🔧</TypingAnimation>
             <TypingAnimation>Connecting to Dev Network... ✅</TypingAnimation>
             <TypingAnimation> whoami</TypingAnimation>
