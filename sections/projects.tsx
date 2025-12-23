@@ -6,11 +6,11 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    title: "Express-pro-structure",
-    desc: "Make an npm package for Express.js developer to provide production ready setup and packages.",
-    skills: ["Node.js", "Inquirer.js", "Chalk", "NPM"],
-    img: "/express-pro-structure.png",
-    link: "https://github.com/Harshsharma1712/express-pro-structure#readme",
+    title: "Order Flow",
+    desc: "A role-based order management backend that allows local shops to manage orders efficiently and customers to avoid physical queues.",
+    skills: ["FastAPI", "PostgreSQL", "SQLAlchemy", "Alembic", "JWT", "Resend", "Pydantic"],
+    img: "/order-flow.png",
+    link: "https://github.com/Harshsharma1712/order-flow#readme",
   },
   {
     title: "Cloud Share",

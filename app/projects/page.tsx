@@ -28,6 +28,13 @@ const projects = [
     link: "https://github.com/Harshsharma1712/log-analyzer#readme",
   },
   {
+    title: "Order Flow",
+    desc: "A role-based order management backend that allows local shops to manage orders efficiently and customers to avoid physical queues.",
+    skills: ["FastAPI", "PostgreSQL", "SQLAlchemy", "Alembic", "JWT", "Resend", "Pydantic"],
+    img: "/order-flow.png",
+    link: "https://github.com/Harshsharma1712/order-flow#readme",
+  },
+  {
     title: "Reels Application",
     desc: "A short video streaming application built for managing video data in database.",
     skills: ["Next.js", "MongoDB", "ImageKit", "next-auth"],
